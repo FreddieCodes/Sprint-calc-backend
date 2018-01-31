@@ -21,7 +21,7 @@ app.use(function(err, req, res, next){
     console.log(err);
     // responds with a status of 422 which is for errors and then sends an object to the response containing the error message;
     res.status(422).send({error: err.message})
-})
+});
 
 // listen to port
 app.listen(process.env.port || 3000, function(){
